@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WORKSHOP #2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+
+
+    <style>
+
+
+
+
+          html {
+background: darkslategray;
+             scroll-behavior: smooth !important;
+
+          }
+
+
+
+        nav{
+            font-family: 'Inconsolata', monospace;
+
+        }
+
+        h1{
+            font-family: 'Inconsolata', monospace;
+            display: inline;
+            color: #f69b9a;
+        }
+
+        .navLinks{
+            align-items: center;
+            text-align: center;
+font-weight: 500;
+        }
+
+
+
+        a, ul, li{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            text-decoration: none;
+            display: inline;
+            padding: 3px;
+            margin: 3px;
+            color: #f6f6f6;
+            transition: all 0.3s ease-in-out;
+
+        }
+
+       a:hover{
+           font-size: 19.2px;
+color: #f69b9a;
+
+       }
+
+.intro{
+    margin: auto;
+    width: 100%;
+
+}
+
+
+        .intro h2{
+            text-align: center;
+            font-family: 'Inconsolata', monospace;
+            color: #f69b9a;
+
+            font-size: 97.8px;
+        }
+
+        #sectionAboutMe{
+            padding-left: 10px;
+            padding-top: 30px;
+
+        }
+
+        #aboutMe{
+
+            border-radius: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 5px;
+            text-align: justify;
+            background: #efefef;
+            max-width: 42%;
+            padding-bottom: 20px;
+        }
+
+        #title{
+            color:black;
+            text-align: center;
+            font-size: 28.5px;
+        }
+
+          .highlighted {
+              background: linear-gradient(0deg, #95ffdf 50%, transparent 50%);
+
+          }
+
+        #bio {
+            font-size: 26px;
+            font-family: 'Inconsolata', monospace;
+            font-weight: 500;
+            color: #0e2a2a;
+            display: inline;
+
+        }
+
+        #bio a{
+            color: #0e2a2a;
+        }
+
+        #bio a:hover{
+            font-size: 26px;
+            background: linear-gradient(0deg, #ade390 50%, transparent 50%);
+        }
+
+
+img{
+    max-width: 46%;
+    float: right;
+    margin-right: 50px;
+    margin-top: 35px;
+    border: 1px solid #0e2a2a;
+    border-radius: 14px ;
+    background: #333232;
+    transform: rotate(15deg);
+}
+
+.cover{
+
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.cover h1{
+    color: #d9d9d9;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+          .highlighteds {
+              background: linear-gradient(0deg, #983434 50%, transparent 50%);
+
+          }
+
+          .tbl{
+              display: flex;
+              justify-content: center;
+              margin: 30px;
+margin-top: 60px;
+              background: rgba(0, 0, 0, 0.63);
+              border-radius: 30px;
+
+          }
+
+
+           table, tr, th, td{
+
+
+               border-collapse: collapse;
+               color: #d9d9d9;
+               font-family: 'Inconsolata', monospace;
+               text-align: left;
+               padding: 20px;
+               margin: 15px;
+width: 100%;
+
+               background: transparent;
+
+
+           }
+
+.tblSpn{
+    background: linear-gradient(0deg, #464624 50%, transparent 50%);
+
+}
+
+.cobb{
+    margin: 10px;
+}
+
+#hobbyTitle {
+
+    margin: 10px;
+    color: floralwhite;
+
+
+}
+
+.spnHobby{
+    background: linear-gradient(0deg, #8c65c0 50%, transparent 50%);
+
+}
+
+          .column {
+              float: left;
+              width: 25%;
+              padding:  10px;
+              border: 1px solid #000;
+              margin: 20px;
+              border-radius: 15px;
+              background: #f5e2d5;
+
+          }
+
+
+          .row {
+             padding: 20px;
+          margin: 20px;
+              text-align: center;
+display: flex;
+              justify-content: center;
+              font-family: 'Inconsolata', monospace;
+              font-weight: 500;
+
+          }
+
+          .row p{
+              padding: 5px;
+              text-align: justify;
+          }
+
+.cheese{
+    background: linear-gradient(0deg, #eebe97 50%, transparent 50%);
+font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+}
+
+.everest{
+    background: linear-gradient(0deg, #b6e8ab 50%, transparent 50%);
+
+}
+
+.chello{
+    background: linear-gradient(0deg, #b0a1de 50%, transparent 50%);
+}
+
+
+.Formation {
+    background: #faefdf;
+    border-radius: 16px;
+    padding: 10px;
+    margin: 1px;
+display: inline;
+font-family: 'Inconsolata', monospace;
+    font-weight: 500;
+    border: 2px solid #0e2a2a;
+    float: right;
+}
+
+input, textarea{
+    width: 98%;
+    background: #d9d9d9;
+    border: 2px solid #0e2a2a;
+    border-radius: 14px;
+    font-size: 20px;
+    color: #0e2a2a;
+    font-family: 'Inconsolata', monospace;
+}
+
+button{
+    width: 30%;
+    background: #d9d9d9;
+    border: 2px solid #0e2a2a;
+    border-radius: 14px;
+    font-size: 18px;
+    color: #0e2a2a;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    float: right;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+    width: 50%;
+
+}
+
+footer{
+float: left;
+}
+
+.copyRight{
+
+    float: right;
+    padding: 10px;
+    background: #faefdf;
+    border-radius: 14px;
+    margin-left: 20px;
+    margin-top: 40px;
+border: 2px solid #0e2a2a;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 500;
+}
+
+    </style>
+</head>
+<body>
+
+<section>
+    <header>
+    <nav>
+
+        <div class="container">
+                <h1 class="text"></h1>
+
+            <div class="navLinks">
+                <ul>
+                    <li><a href="#sectionAboutMe">~> About</a></li>
+                    <li><a href="#Ed">~> Education</a></li>
+                    <li><a href="#hobby">~> Hobbies</a></li>
+                    <li><a href="#fooooot">~> Contacts</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+        </header>
+</section>
+
+<main>
+<section id="navigator">
+    <div class="container">
+    <div class="intro">
+        <h2>HEY! I'M <span style="font-family: 'Londrina Outline', sans-serif;">MOHAK</span></h2>
+        <h2>HEY! I'M <span style="font-family: 'Londrina Outline', sans-serif;">MOHAK</span></h2>
+        <h2>HEY! I'M <span style="font-family: 'Londrina Outline', sans-serif;">MOHAK</span></h2>
+    </div>
+    </div>
+</section>
+</main>
+
+<pre>
+
+</pre>
+
+<section id="sectionAboutMe">
+
+   <div class="wrapper">
+
+       <img src="images/ME.png" alt="">
+       <div id="aboutMe">
+        
+<h1 id="title">
+    <br>
+    ~> <span class="highlighted">ABOUT ME</span>
+
+</h1>
+        <p id="bio">
+            <br><br>
+            The name's Mohak Bhakta Mathema, I'm Seventeen and currently am doing my Bachelors degree in Computer Science from
+            <a href="https://heraldcollege.edu.np" target="_blank">Herald College Kathmandu</a> since Autumn of 2023. I love learning, but also hate learning the way society wants me to and I will keep on learning the way I want. The fun way.
+            <br><br>
+            A curious guy who will learn anything and everything that interest him is how I describe myself. With my introduction you could guess I have a lot of hobbies, and you would not be mistaken. I do have a long list of hobbies, long enough to bore anyone who listens about it.
+            <br>
+        </p>
+
+    </div>
+
+   </div>
+
+
+    <pre>
+
+
+
+    </pre>
+
+</section>
+
+<section id="Ed">
+    <br>
+    <div class="cover">
+        <br>
+        <h1 id="edu">~> <span class="highlighteds">Academic Achievements</span></h1>
+        <div class="tbl">
+            <table>
+                <thead>
+                <tr>
+                    <th>
+                        School
+                    </th>
+                    <th>
+                        <span style="color: lightpink">Year Joined</span>
+                    </th>
+                    <th>
+                        <span style="color: lightsalmon"> Year of Completion</span>
+                    </th>
+                    <th>
+                        <span style="color: lightblue">Exam Type</span>
+                    </th>
+                    <th>
+                        <span style="color: lightgreen"> G.P.A</span>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>~> <span class="tblSpn">Liverpool H.S.S</span></th>
+                    <td>2017 A.D</td>
+                    <td>2021 A.D</td>
+                    <td>SEE</td>
+                    <td>3.85</td>
+                </tr>
+                <tr>
+                    <th>~>  <span class="tblSpn">Liverpool Int'l College</span></th>
+                    <td>2021 A.D</td>
+                    <td>2023 A.D</td>
+                    <td>NEB</td>
+                    <td>3.38</td>
+                </tr>
+                <tr>
+                    <th>~> <span class="tblSpn">Harvard CS50</span></th>
+                    <th>2021 A.D</th>
+                    <th>2022 A.D</th>
+                    <td>NONE</td>
+                    <td>NONE</td>
+                </tr>
+                <tr>
+                    <th>~>  <span class="tblSpn">Herald College Kathmandu</span></th>
+                    <th>2023 A.D</th>
+                    <th>On-Going</th>
+                    <td>----</td>
+                    <td>----</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+</section>
+
+<br><br>
+<section id="hobby">
+
+    <div class="cobb">
+
+        <h1 id="hobbyTitle">
+            ~> <span class="spnHobby">Hobbies & Interests</span>
+        </h1>
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <h3 ><span class="cheese">COOKING</span></h3>
+                    <p>
+                        Talking about hobbies and interests, Let's talk about Cooking. I started taking interest in cooking since I was 12 and if you're wondering I am 17. I liked looking at cooking tutorials and reading cook books by famous cooks like Joshua Weissman and Nick D'Giovanni.
+                        <br><br>
+                        Nowadays, I cook almost every day and try new recipes every weekend. Cooking is like free therapy to me, this helps me cool down and be stress-free as well . Cooking is a natural medicine to me cause, while I cook I get into a zen like state and it makes me happy when my friends and family get exiced to taste my cooking.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3> <span class="everest">TRAVELLING</span></h3>
+                    <p>Let's be honest, we've all seen Man vs Wild in T.V. and thought "I want to do crazy shit like he does, I want to travel around the world to do these things", and so have I. Watching that crazy dude so some crazy stuff always got me excited, so I gravitated towards it.
+                        <br><br>
+                    I go to places I've never been before, go trekking, hiking and many more with friends and families. I like going to explore nature and it's strange creation, away from the society filled with tech and pollution. Travelling is a means to escape the technologies to me.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3><span class="chello">MUSIC</span></h3>
+                    <p> Music has been a part of my life from since I can remember. A little backstory, I have an elder sibling and he would always play music on the living room tv. If you can remember there used to be a music streaming channel called VH1 studios and my brother used to play music on it daily. If you are wondering What genre of music I listen to, it's Indie and Jazz.
+                        <br><br>
+                        I got into music, thanks to my brother. Later on he taught me how to play the Guitar, Ukulele, Piano and many more. I am still expanding my knowledge in music everyday and will continue this forever.
+                    </p>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
+
+<pre>
+
+
+
+</pre>
+<footer id="fooooot">
+
+        <div class="copyRight">
+            <br><br>
+            <p>
+                Copyright ©
+                2023 Mohak Bhakta Mathema. All rights reserved. Do Not Copy Without Permission.
+                <br><br>
+                <center>
+                Project for Class in Herald College Kathmandu (Naxal, Kathmandu, Nepal).
+        </center>
+                <br><br>
+
+            <center> Socials @:</center>
+            <br>
+                <ul style="display: block">
+            <li><a href="https://www.instagram.com/mohak.exe/" style="color: darkorange" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com/ReniSauc__" style="color: deepskyblue" target="_blank">X (Twitter)</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100093674572838" style="color: darkblue" target="_blank">Facebook</a></li>
+
+        </ul>
+
+            <br><br>
+            <center>
+                P.S. Project might be refined as classes pass by.
+            </center>
+
+            </p>
+    </div>
+
+<section class="Formation">
+
+
+
+    <form action="https://formsubmit.co/9c995f8c19c8eb3e65a4ec92b77c98d2 " method="POST" target="_blank">
+
+        <label for="Name">Name:</label>
+        <input type="text" name="Name" id="Name" required>
+        <br>
+        <label for="Email">E-mail:</label>
+        <input type="email" name="Email" id="Email" required>
+        <br>
+        <label for="Message">Message:</label>
+        <textarea name="Message" id="Message" cols="30" rows="10" required></textarea>
+        <input type="hidden" name="_captcha" value="false">
+        <br><br>
+        <button type="submit">SEND</button>
+    </form>
+
+</section>
+
+</footer>
+
+<script>
+    const div = document.querySelector(".text");
+    const text = "~> Mohak-Bhakta-Mathema"
+
+    function textTypingEffect(element, text, i = 0){
+        element.textContent += text[i];
+
+        if (i === text.length - 1){
+            return;
+        }
+
+        setTimeout(() => textTypingEffect(element, text, i + 1), 120);
+    }
+    textTypingEffect(div, text);
+</script>
+</body>
+</html>
